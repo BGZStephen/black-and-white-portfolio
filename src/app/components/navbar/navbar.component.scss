@@ -1,0 +1,51 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+
+.logo-container {
+
+}
+
+.social-container {
+
+}
+
+.fa-bars {
+  padding: 5px 0 5px 5px;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 5px 5px 0px 5px;
+}
+
+.fa-terminal {
+  padding: 5px;
+}
+
+.fa-facebook,
+.fa-linkedin,
+.fa-github {
+  padding: 5px;
+}
+
+.fa-facebook {
+
+}
+
+.fa-linkedin {
+
+}
+
+.fa-github {
+
+}
