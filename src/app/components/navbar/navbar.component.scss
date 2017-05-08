@@ -1,7 +1,9 @@
+@import '../../sass/_variables';
+
 .main-container {
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px;
+  padding: 10px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -11,30 +13,85 @@
   display: flex;
 }
 
-.logo-container {
-
-}
-
-.social-container {
-
-}
-
 .fa-bars {
+  color: $home-primary-font;
+  font-size: 1.8em;
+  font-weight: bold;
   padding: 5px 0 5px 5px;
 }
 
 .menu-toggle {
+  color: $primary-font-inverse;
   display: none;
-  padding: 5px 5px 0px 5px;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
-.fa-terminal {
+.menu-container {
+  align-items: center;
+  background: $home-primary-font;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: -100%;
+  position: fixed;
+  top: 10px;
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: 100;
+}
+
+.fa-times {
+  font-size: 2em;
+  left: 10px;
+  position: absolute;
+  top: 5px;
+}
+
+.menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.menu-item {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: 25px;
+  text-transform: uppercase;
+}
+
+.logo-container {
+  display: flex;
   padding: 5px;
+}
+
+.logo-container > a {
+  color: $home-primary-font;
+  font-size: 1.8em;
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.logo-container > p {
+  color: $primary-font-inverse;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-top: -5px;
+  text-transform: uppercase;
+}
+
+.social-container {
+  display: none;
 }
 
 .fa-facebook,
 .fa-linkedin,
 .fa-github {
+  color: $primary-font-inverse;
+  font-size: 1.4em;
+  margin-left: 5px;
   padding: 5px;
 }
 
@@ -48,4 +105,34 @@
 
 .fa-github {
 
+}
+
+@media (min-width: 768px) {
+
+  // .main-container {
+  //   padding: 20px 40px;
+  // }
+
+  .social-container {
+    display: inline;
+  }
+
+  .menu-toggle {
+    display: inline;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .main-container {
+    padding: 20px 40px;
+  }
+
+  .menu-container {
+    bottom: auto;
+    padding: 60px 20px;
+    top: 20px;
+    width: auto;
+  }
 }

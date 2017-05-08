@@ -2,6 +2,13 @@
 
 .main-container {
   align-items: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/assets/black-and-white-portfolio/images/background.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +21,7 @@
 }
 
 h1 {
+  color: $home-primary-font;
   font-size: 4em;
   margin-top: -10px;
   text-align: center;

@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  menuVisible: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleMenuVisibility() {
+    if(this.menuVisible && screen.width < 1024) {
+      return {"left": "0px"}
+    } else if (this.menuVisible && screen.width >= 1024) {
+      return {"left": "40px"}
+    } else {
+      return {"left": "-100%"}
+    }
   }
 
 }
