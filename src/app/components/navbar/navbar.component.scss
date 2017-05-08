@@ -1,6 +1,6 @@
 @import '../../sass/_variables';
 
-.main-container {
+.navbar-main-container {
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -27,6 +27,7 @@
   font-size: 1.8em;
   font-weight: bold;
   padding-left: 10px;
+  transition: color 0.8s ease;
 }
 
 .menu-container {
@@ -39,7 +40,7 @@
   left: -100%;
   position: fixed;
   top: 10px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   width: 100%;
   z-index: 100;
 }
@@ -66,10 +67,34 @@
   transition: all 0.2s ease;
 }
 
+.contact-item {
+  cursor: pointer;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 12px 0;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
 .menu-item:hover,
 .link-active {
   background: $primary-font;
-  color: $home-primary-font;
+  color: $primary-font-inverse;
+}
+
+.contact-list {
+  max-height: 0;
+  list-style: none;
+  overflow: hidden;
+  transition: all 0.5s ease
+}
+
+.contact-toggle:hover ~ .contact-list {
+  max-height: 100px;
+}
+
+.contact-list:hover {
+  max-height: 100px;
 }
 
 .logo-container {
@@ -82,6 +107,7 @@
   font-size: 1.8em;
   font-weight: 900;
   margin-right: 5px;
+  transition: color 0.8s ease;
 }
 
 .logo-container > p {
@@ -116,7 +142,7 @@
 }
 
 .fa-github:hover {
-  color: $work-samples;
+  color: $work-examples;
 }
 
 @media (min-width: 768px) {
@@ -140,7 +166,7 @@
 
 @media (min-width: 1024px) {
 
-  .main-container {
+  .navbar-main-container {
     padding: 20px 40px;
   }
 
@@ -150,4 +176,30 @@
     top: 20px;
     width: auto;
   }
+}
+
+// styles for different pages
+
+.work-samples-color {
+  color: $work-examples !important;
+}
+
+.work-samples-background-color {
+  background: $work-examples !important;
+}
+
+.code-lab-color {
+  color: $code-lab !important;
+}
+
+.code-lab-background-color {
+  background: $code-lab !important;
+}
+
+.css-workshop-color {
+  color: $css-workshop !important;
+}
+
+.css-workshop-background-color {
+  background: $css-workshop !important;
 }

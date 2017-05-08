@@ -40,7 +40,8 @@ p {
 .work-examples,
 .code-lab,
 .css-workshop,
-.contact-me {
+.contact-me,
+.contact-me-alt {
   cursor: pointer;
   font-weight: bold;
   padding: 3px 5px;
@@ -48,11 +49,11 @@ p {
 }
 
 .work-examples {
-  color: $work-samples;
+  color: $work-examples;
 }
 
 .work-examples:hover {
-  background: $work-samples;
+  background: $work-examples;
   color: $primary-font;
 }
 
@@ -74,14 +75,33 @@ p {
   color: $primary-font;
 }
 
-.contact-me {
+.contact-me,
+.contact-me-alt,
+.contact-phone {
   color: $home-primary-font;
-
 }
 
-.contact-me:hover {
+.contact-row,
+.contact-toggle {
+  display: inline;
+}
+
+.contact-me:hover,
+.contact-me-alt:hover {
   background: $home-primary-font;
   color: $primary-font;
+}
+
+.contact-me-alt {
+  display: none;
+}
+
+.contact-toggle:hover .contact-me {
+  display: none;
+}
+
+.contact-toggle:hover .contact-me-alt {
+  display: inline;
 }
 
 @media (min-width: 768px) {
@@ -99,7 +119,9 @@ p {
     text-transform: uppercase;
   }
 
-  p {
+  p,
+  .contact-me,
+  .contact-me-alt {
     font-size: 1.5em;
     line-height: 1.6;
     margin-bottom: 25px;

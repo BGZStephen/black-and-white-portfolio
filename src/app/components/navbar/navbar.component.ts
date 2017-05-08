@@ -23,8 +23,10 @@ export class NavbarComponent implements OnInit {
       return {"left": "0px"}
     } else if (this.menuVisible && screen.width >= 1024) {
       return {"left": "40px"}
-    } else {
+    } else  if (!this.menuVisible && screen.width < 1024){
       return {"left": "-100%"}
+    } else {
+      return {"left": "-400px"}
     }
   }
 

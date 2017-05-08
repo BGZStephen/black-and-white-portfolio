@@ -47,6 +47,10 @@
   top: calc(50% - 33px);
 }
 
+.fa-stack > a {
+  text-decoration: none;
+}
+
 .fa-stack:nth-of-type(odd) {
   left: 15px;
 }
@@ -93,7 +97,9 @@
 }
 
 .item-description {
+  line-height: 1.6;
   margin: 5px 0 10px 0;
+  padding: 0 10px;
 }
 
 @media (min-width: 540px) {

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { router } from "./app.routes"
+import { SamplesQueryService } from "./services/samples-query.service"
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -28,7 +29,7 @@ import { CssWorkshopComponent } from './pages/css-workshop/css-workshop.componen
     HttpModule,
     router
   ],
-  providers: [],
+  providers: [SamplesQueryService],
   bootstrap: [AppComponent]
 })
 

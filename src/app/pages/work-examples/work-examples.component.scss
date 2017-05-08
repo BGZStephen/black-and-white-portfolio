@@ -12,13 +12,12 @@
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   min-height: 100vh;
   width: 100%;
 }
 
 .main-header {
-  color: $work-samples;
+  color: $work-examples;
   margin-top: 80px;
 }
 
@@ -47,6 +46,10 @@
   top: calc(50% - 33px);
 }
 
+.fa-stack > a {
+  text-decoration: none;
+}
+
 .fa-stack:nth-of-type(odd) {
   left: 15px;
 }
@@ -57,7 +60,7 @@
 
 .fa-github,
 .fa-link {
-  color: $work-samples;
+  color: $work-examples;
   transition: color .3s ease;
 }
 
@@ -72,7 +75,7 @@
 }
 
 .fa-stack:hover .fa-circle {
-  color: $work-samples;
+  color: $work-examples;
 }
 
 .item-content-container {
@@ -87,13 +90,15 @@
 }
 
 .item-seperator {
-  border: 2px solid $work-samples;
+  border: 2px solid $work-examples;
   margin: 8px auto;
   width: 70%;
 }
 
 .item-description {
+  line-height: 1.6;
   margin: 5px 0 10px 0;
+  padding: 0 10px;
 }
 
 @media (min-width: 540px) {
