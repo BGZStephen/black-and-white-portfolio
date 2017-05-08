@@ -10,6 +10,7 @@
 }
 
 .navbar {
+  cursor: pointer;
   display: flex;
 }
 
@@ -44,6 +45,7 @@
 }
 
 .fa-times {
+  cursor: pointer;
   font-size: 2em;
   left: 10px;
   position: absolute;
@@ -56,10 +58,17 @@
 }
 
 .menu-item {
+  cursor: pointer;
   font-size: 1.8em;
   font-weight: 700;
-  margin: 25px;
+  padding: 15px 25px;
   text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  background: $primary-font;
+  color: $home-primary-font;
 }
 
 .logo-container {
@@ -90,28 +99,26 @@
 .fa-linkedin,
 .fa-github {
   color: $primary-font-inverse;
+  cursor: pointer;
   font-size: 1.4em;
   margin-left: 5px;
   padding: 5px;
+  transition: color 0.3s ease;
 }
 
-.fa-facebook {
-
+.fa-facebook:hover {
+  color: $facebook-color;
 }
 
-.fa-linkedin {
-
+.fa-linkedin:hover {
+  color: $linkedin-color;
 }
 
-.fa-github {
-
+.fa-github:hover {
+  color: $work-samples;
 }
 
 @media (min-width: 768px) {
-
-  // .main-container {
-  //   padding: 20px 40px;
-  // }
 
   .social-container {
     display: inline;
@@ -121,6 +128,13 @@
     display: inline;
   }
 
+  .fa-facebook,
+  .fa-linkedin,
+  .fa-github {
+    font-size: 1.6em;
+    margin-left: 15px;
+    margin-top: -2px;
+  }
 }
 
 @media (min-width: 1024px) {

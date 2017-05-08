@@ -3,8 +3,8 @@
 .main-container {
   align-items: center;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
     ),
     url('/assets/black-and-white-portfolio/images/background.jpg');
   background-size: cover;
@@ -17,29 +17,91 @@
 }
 
 .intro-container {
-
+  padding: 0 15px;
+  text-align: center;
 }
 
 h1 {
   color: $home-primary-font;
   font-size: 4em;
-  margin-top: -10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.work-samples {
+p {
+  color: $primary-font-inverse;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
 
+.work-samples,
+.code-lab,
+.css-workshop,
+.contact-me {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 3px 5px;
+  transition: all 0.2s ease;
+}
+
+.work-samples {
+  color: $work-samples;
+}
+
+.work-samples:hover {
+  background: $work-samples;
+  color: $primary-font;
 }
 
 .code-lab {
+  color: $code-lab;
+}
 
+.code-lab:hover {
+  background: $code-lab;
+  color: $primary-font;
 }
 
 .css-workshop {
+  color: $css-workshop;
+}
 
+.css-workshop:hover {
+  background: $css-workshop;
+  color: $primary-font;
 }
 
 .contact-me {
+  color: $home-primary-font;
 
+}
+
+.contact-me:hover {
+  background: $home-primary-font;
+  color: $primary-font;
+}
+
+@media (min-width: 768px) {
+  .intro-container {
+    padding: 0 15px;
+    width: 700px;
+  }
+
+  h1 {
+    color: $home-primary-font;
+    font-size: 6em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
 }
