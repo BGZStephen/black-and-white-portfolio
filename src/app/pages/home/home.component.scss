@@ -37,7 +37,7 @@ p {
   margin-bottom: 15px;
 }
 
-.work-samples,
+.work-examples,
 .code-lab,
 .css-workshop,
 .contact-me {
@@ -47,11 +47,11 @@ p {
   transition: all 0.2s ease;
 }
 
-.work-samples {
+.work-examples {
   color: $work-samples;
 }
 
-.work-samples:hover {
+.work-examples:hover {
   background: $work-samples;
   color: $primary-font;
 }
